@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Projeto Pipeline de Dados Logísticos
 
 ## ETL e Consolidação de Filiais
@@ -68,3 +69,6 @@ O produto final entrega métricas cruciais de faturamento e comportamento operac
 *1* Execute o script src/gerador_de_dados.py para criar a pasta com as planilhas brutas. 
 *2* Abra o arquivo .pbix no Power BI. 
 *3* Atualize o caminho da fonte de dados no Power Query para apontar para o seu diretório local.
+=======
+# Projeto-Relat-rio-de-Vendas
+>>>>>>> be9b490d0915842ab63698e89e783e778231ae6a
