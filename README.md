@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Projeto Pipeline de Dados Logísticos
 
 ## ETL e Consolidação de Filiais
