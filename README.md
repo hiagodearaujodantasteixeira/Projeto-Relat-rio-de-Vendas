@@ -44,6 +44,8 @@ O produto final entrega métricas cruciais de faturamento e comportamento operac
 
 * Gargalo Logístico Crítico (O Insight Principal): O gráfico de status revela um problema alarmante em São Paulo e Minas Gerais: nessas regiões, o volume de pedidos cancelados supera o volume de pedidos entregues. Este insight indica uma falha severa na eficiência das transportadoras locais ou problemas na etapa de checkout.  
 
+![Demonstração do Dashboard](img/dashboard.png)
+
 ## Boas Práticas visuais aplicadas
 * Uso de menu lateral dedicado para Filtros Dinâmicos (Segmentadores) por Data e Status de Entrega. 
 
