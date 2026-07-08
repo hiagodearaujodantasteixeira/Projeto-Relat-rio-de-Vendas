@@ -22,20 +22,6 @@ Para simular o "caos" comum do dia a dia de uma empresa, utilizei Inteligência 
 
 * Power BI (DAX): Modelagem de dados, criação de métricas e design do painel visual.
 
-## Estrutura de Diretórios do Repositório
-Plaintext
-├── src/                    # Código-fonte (Script Python gerador de dados)
-│   └── gerador_de_dados.py
-│
-├── data/                   # Camada de Staging (Dados brutos gerados - ignorados no Git)
-│   └── filiais/            
-│       ├── Vendas_Filial_MG.xlsx
-│       ├── Vendas_Filial_PR.xlsx
-│       └── Vendas_Filial_SP.xlsx
-│
-└── pbix/                   # Arquivo final do Power BI contendo o Dashboard
-    └── dashboard_logistica.pbix
-
 ## O Processo de ETL (Extração, Transformação e Carga) 
 Em vez de utilizar o conector automatizado de pastas do Power BI (que quebraria com a diferença de estruturas), o tratamento foi realizado de forma modular e granular para garantir a escalabilidade:
 
@@ -66,9 +52,9 @@ O produto final entrega métricas cruciais de faturamento e comportamento operac
 * Alinhamento rigoroso dos componentes em formato de cards utilizando as linhas de grade para melhor legibilidade.
 
 ## Como Executar o Projeto
-*1* Execute o script src/gerador_de_dados.py para criar a pasta com as planilhas brutas. 
-*2* Abra o arquivo .pbix no Power BI. 
-*3* Atualize o caminho da fonte de dados no Power Query para apontar para o seu diretório local.
-=======
-# Projeto-Relat-rio-de-Vendas
->>>>>>> be9b490d0915842ab63698e89e783e778231ae6a
+*1º* Execute o script src/gerador_de_dados.py para criar a pasta com as planilhas brutas. 
+
+*2º* Abra o arquivo .pbix no Power BI. 
+
+*3º* Atualize o caminho da fonte de dados no Power Query para apontar para o seu diretório local.
+
