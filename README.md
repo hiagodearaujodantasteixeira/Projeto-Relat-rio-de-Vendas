@@ -53,10 +53,16 @@ O produto final entrega métricas cruciais de faturamento e comportamento operac
 
 * Alinhamento rigoroso dos componentes em formato de cards utilizando as linhas de grade para melhor legibilidade.
 
-## Como Executar o Projeto
-*1º* Execute o script src/gerador_de_dados.py para criar a pasta com as planilhas brutas. 
+## Como Executar e Reproduzir o Projeto
 
-*2º* Abra o arquivo .pbix no Power BI. 
+Como a pasta `data/filiais/` está listada no `.gitignore` por boas práticas de engenharia de dados, ao clonar este repositório você precisará recriar os dados locais e apontar o Power BI para o seu diretório atual:
 
-*3º* Atualize o caminho da fonte de dados no Power Query para apontar para o seu diretório local.
+1. **Gerar as Bases:** Execute o script `src/gerador_de_dados.py` para criar a pasta e gerar as planilhas brutas com as anomalias propositais.
+2. **Abrir o Relatório:** Abra o arquivo `.pbix` no Power BI.
+3. **Atualizar as Fontes (DataSource.NotFound):** Clique em **Transformar Dados** para acessar o Power Query. No painel esquerdo, atualize a etapa **Fonte (Source)** tanto da consulta principal (`Base_Bruta`) quanto de cada uma das consultas individuais (`Filial_SP`, `Filial_PR` e `Filial_MG`), selecionando o local correto dos arquivos no seu computador.
+
+### Tratamento contra Arquivos Corrompidos/Temporários (Tratamento de Exceção)
+Durante a migração de ambientes, foi identificado que o sistema operacional ou processos em segundo plano podem gerar arquivos temporários ou corrompidos na pasta de origem (como arquivos ocultos ou extensões inválidas com o nome das filiais). 
+
+Para garantir a resiliência do pipeline, foi aplicada uma etapa de **Filtro de Extensão** na consulta principal do Power Query, garantindo que **apenas arquivos estritamente do tipo `.xlsx`** sejam processados, eliminando qualquer ruído ou erro de leitura automática (`DataFormat.Error`).
 
