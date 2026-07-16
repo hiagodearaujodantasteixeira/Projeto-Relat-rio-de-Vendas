@@ -66,3 +66,5 @@ Durante a migração de ambientes, foi identificado que o sistema operacional ou
 
 Para garantir a resiliência do pipeline, foi aplicada uma etapa de **Filtro de Extensão** na consulta principal do Power Query, garantindo que **apenas arquivos estritamente do tipo `.xlsx`** sejam processados, eliminando qualquer ruído ou erro de leitura automática (`DataFormat.Error`).
 
+## Link do Dashboard no PowerBi Service
+https://app.powerbi.com/view?r=eyJrIjoiMDkyZTU3MmUtZjg4MS00ZDVhLWJiNTQtMDMzNTg3NmRlOTFiIiwidCI6ImUyNjUzOTI3LTk3MjgtNDFjZC04Y2QzLWFiMTI4YWNkMjA2MSJ9
